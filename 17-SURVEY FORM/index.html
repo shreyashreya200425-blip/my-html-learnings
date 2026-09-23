@@ -8,119 +8,114 @@
   <body>
     <header>
       <h1 id="title">Survey Form</h1>
-      <p id="description">Thankyou for taking time to help us improve our services</p>
+      <p id="description">Thank you for taking the time to help us improve our services.</p>
     </header>
 
     <main>
-    <form id="survey-form">
+      <form id="survey-form">
       <label id="name-label" for="name">Name</label>
       <input 
-      required type="text" 
+      required 
+      type="text" 
       id="name" 
       name="name" 
       placeholder="e.g. Monica Geller" 
-      required size="20">
-      </input>
+      size="20">
 <br>
       <label id="email-label" for="email">Email</label>
       <input 
-      required type="email" 
+      required 
+      type="email" 
       id="email" 
       name="email" 
       placeholder="e.g. abc@email.com" 
-      required size="20">
-      </input>
+      size="20">
 <br>
       <label id="number-label" for="number">Age</label>
       <input 
-      required type="number" 
+      required 
+      type="number" 
       id="number" 
       name="age" 
       placeholder="e.g. 18" 
       min="18"
       max="99">
-      </input>
       
-      <legend><p>Which option best describes your current situation?</p></legend>
-      <select name="current role" id="dropdown">
+     <p>Which option best describes your current situation?</p>
+      <select name="current-role" id="role-dropdown">
         <option value="employed">Employed</option>
         <option value="un-employed">Un-employed</option>
         <option value="student">Student</option>
         <option value="retired">Retired</option>
       </select>
 
-      <legend><p>Would you recommend this restaurant to your friends?</p></legend>
+      <p>Would you recommend this restaurant to your friends?</p>
       <input
       type="radio"
       id="yes-option"
       name="recommendation"
-      value="yes"></input>
+      value="yes">
       <label for="yes-option">Yes</label>
 
       <input 
       id="no-option"
       type="radio"
       name="recommendation"
-      value="no"></input>
+      value="no">
       <label for="no-option" >No</label>
 
-      <legend><p>What is your favourite cuisine?</p></legend>
-      <select name="cuisine" id="dropdown">
+      <p>What is your favourite cuisine?</p>
+      <select name="cuisine" id="cuisine-dropdown">
         <option value="italian">Italian</option>
         <option value="mexican">Mexican</option>
         <option value="chinese">Chinese</option>
         <option value="indian">Indian</option>
       </select>
 
-      <legend><p>What would you like to see improved?(check all that applies)</p></legend>
+      <p>What would you like to see improved? <i>(Check all that apply)</i></p>
       <label 
-      for="options"> Sanitation?<label>
+      for="sanitation"> Sanitation?</label>
       <input 
-      value="reputation"
+      value="Sanitation"
       type="checkbox"
-      id="options"
-      name="options"
-      for="options"></input>
+      id="sanitation"
+      name="options">
 <br>
       <label 
-      for="options"> Staff Behaviour?<label>
+      for="staff-behaviour"> Staff Behaviour?</label>
       <input 
-      value="reputation"
+      value="Staff Behaviour"
       type="checkbox"
-      id="options"
-      name="options"
-      for="options"></input>
+      id="staff-behaviour"
+      name="options">
 <br>
       <label 
-      for="options"> Food Quality?<label>
+      for="food-quality"> Food Quality?</label>
       <input 
-      value="reputation"
+      value="Food Quality"
       type="checkbox"
-      id="options"
-      name="options"
-      for="options"></input>
+      id="food-quality"
+      name="options">
 <br>
       <label 
-      for="options"> Food Quantity?<label>
+      for="food-quantity"> Food Quantity?</label>
       <input 
-      value="reputation"
+      value="Food Quantity"
       type="checkbox"
-      id="options"
-      name="options"
-      for="options"></input>
+      id="food-quantity"
+      name="options">
 
-      <legend><p>Any suggestion?</p></legend>
+      <p>Any suggestion?</p>
       <textarea
       cols="50"
-      row="50"
+      rows="10"
       name="comment"
-      id="comment">
-      </textarea>
+      id="comment"></textarea>
 
       <button id="submit"
       type="submit">Submit</button>
-        
-      </textarea>
+
+      </form>
     </main>
   </body>
 </html>
