@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+  </head>
+
+  <body>
+    <header>
+      <h1 id="title">Survey Form</h1>
+      <p id="description">Thankyou for taking time to help us improve our services</p>
+    </header>
+
+    <main>
+    <form id="survey-form">
+      <label id="name-label" for="name">Name</label>
+      <input 
+      required type="text" 
+      id="name" 
+      name="name" 
+      placeholder="e.g. Monica Geller" 
+      required size="20">
+      </input>
+<br>
+      <label id="email-label" for="email">Email</label>
+      <input 
+      required type="email" 
+      id="email" 
+      name="email" 
+      placeholder="e.g. abc@email.com" 
+      required size="20">
+      </input>
+<br>
+      <label id="number-label" for="number">Age</label>
+      <input 
+      required type="number" 
+      id="number" 
+      name="age" 
+      placeholder="e.g. 18" 
+      min="18"
+      max="99">
+      </input>
+      
+      <legend><p>Which option best describes your current situation?</p></legend>
+      <select name="current role" id="dropdown">
+        <option value="employed">Employed</option>
+        <option value="un-employed">Un-employed</option>
+        <option value="student">Student</option>
+        <option value="retired">Retired</option>
+      </select>
+
+      <legend><p>Would you recommend this restaurant to your friends?</p></legend>
+      <input
+      type="radio"
+      id="yes-option"
+      name="recommendation"
+      value="yes"></input>
+      <label for="yes-option">Yes</label>
+
+      <input 
+      id="no-option"
+      type="radio"
+      name="recommendation"
+      value="no"></input>
+      <label for="no-option" >No</label>
+
+      <legend><p>What is your favourite cuisine?</p></legend>
+      <select name="cuisine" id="dropdown">
+        <option value="italian">Italian</option>
+        <option value="mexican">Mexican</option>
+        <option value="chinese">Chinese</option>
+        <option value="indian">Indian</option>
+      </select>
+
+      <legend><p>What would you like to see improved?(check all that applies)</p></legend>
+      <label 
+      for="options"> Sanitation?<label>
+      <input 
+      value="reputation"
+      type="checkbox"
+      id="options"
+      name="options"
+      for="options"></input>
+<br>
+      <label 
+      for="options"> Staff Behaviour?<label>
+      <input 
+      value="reputation"
+      type="checkbox"
+      id="options"
+      name="options"
+      for="options"></input>
+<br>
+      <label 
+      for="options"> Food Quality?<label>
+      <input 
+      value="reputation"
+      type="checkbox"
+      id="options"
+      name="options"
+      for="options"></input>
+<br>
+      <label 
+      for="options"> Food Quantity?<label>
+      <input 
+      value="reputation"
+      type="checkbox"
+      id="options"
+      name="options"
+      for="options"></input>
+
+      <legend><p>Any suggestion?</p></legend>
+      <textarea
+      cols="50"
+      row="50"
+      name="comment"
+      id="comment">
+      </textarea>
+
+      <button id="submit"
+      type="submit">Submit</button>
+        
+      </textarea>
+    </main>
+  </body>
+</html>
